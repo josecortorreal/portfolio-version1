@@ -1,6 +1,6 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif; 
     scroll-behavior: smooth;
@@ -16,11 +16,27 @@ body{
     padding: 20px 60px;
 }
 
-header{
-    padding: 0px 80px;
+.heading{
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
+img {
+    border: 2px solid;
+    border-radius: 4px;
+    
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
 nav {
+    
    display:flex;
    justify-content: space-between;
    align-items: center;
@@ -44,18 +60,24 @@ nav li {
 nav li a {
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 
 #home{
     color: white;
-    padding-top: 170px;
+    padding-top: 190px;
     height: 100vh;
     text-align: center;
 }
 
-#home p {
+.normal {
     font-size: 25px;
+}
+
+.smaller {
+    padding-top: 5px;
+    font-size: 17px;
 }
 
 .name {
@@ -63,11 +85,6 @@ nav li a {
     
 }
 
-img {
-    border: 2px solid;
-    border-radius: 4px;
-    
-}
 
 #aboutme{
     color: white;   
@@ -84,15 +101,60 @@ img {
     padding-top: 30px;
 }
 
+#projects {
+    text-align: center;
+}
 
 .projectimage{
     width: 50%;
     height: 350px;
-
+    
 }
 
-.heading{
-    font-size: 70px;
+#contactme {
     text-align: center;
-
 }
+
+#contactme p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav li a {
+        font-size: 15px;
+        
+    }
+
+    .aboutimg {
+        width:auto;
+        margin-bottom: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .projectimage {
+        width: 350px;
+    }
+
+    
+}
+
+
