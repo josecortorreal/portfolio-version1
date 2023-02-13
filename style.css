@@ -19,7 +19,8 @@ body{
 .heading{
     font-size: 70px;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 40px 0px;
+    text-decoration: underline;
 }
 
 img {
@@ -93,7 +94,7 @@ nav li a {
 
 .aboutme{
     padding-left: 30px;
-    
+    font-size: 20px;
 }
 
 .about{
